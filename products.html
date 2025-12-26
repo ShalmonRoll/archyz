@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse Archyz's complete product portfolio - premium snacks including chips, namkeen, cookies, and more. Quality snacks from Bengaluru.">
+    <meta name="keywords" content="Archyz products, snacks portfolio, chips, namkeen, cookies, Indian snacks, buy snacks online">
+    <meta name="author" content="Archyz">
+    <title>Products - Archyz Premium Snacks Portfolio | Browse & Buy</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <i class="fas fa-cookie-bite"></i>
+                <span>Archyz</span>
+            </a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link" aria-label="Home page">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link" aria-label="About us page">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="products.html" class="nav-link active" aria-label="Products page">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link" aria-label="Contact us page">Contact</a>
+                </li>
+            </ul>
+            
+            <div class="nav-social">
+                <a href="https://linkedin.com/company/archyz" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://twitter.com/archyz" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="https://facebook.com/archyz" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+            
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="container">
+            <h1 class="page-title">Our Products</h1>
+            <p class="page-subtitle">Discover our complete range of premium snacks</p>
+        </div>
+    </section>
+
+    <!-- Product Filter Section -->
+    <section class="section product-filter-section">
+        <div class="container">
+            <div class="filter-container">
+                <h3 class="filter-title">Filter by Category:</h3>
+                <div class="filter-buttons" id="filterButtons">
+                    <button class="filter-btn active" data-category="all">All Products</button>
+                    <button class="filter-btn" data-category="chips">Chips</button>
+                    <button class="filter-btn" data-category="namkeen">Namkeen</button>
+                    <button class="filter-btn" data-category="sweet">Sweet Treats</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid Section -->
+    <section class="section products-section">
+        <div class="container">
+            <div class="products-grid" id="productsGrid">
+                <!-- Product 1 -->
+                <article class="product-card" data-category="chips">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=400&h=300&fit=crop" alt="Spicy Masala Chips" loading="lazy">
+                        <div class="product-badge">Bestseller</div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Spicy Masala Chips</h3>
+                        <p class="product-description">Crispy potato chips seasoned with our signature blend of Indian spices</p>
+                        <button class="btn btn-outline view-details-btn" data-product="masala-chips">View Details</button>
+                    </div>
+                </article>
+
+                <!-- Product 2 -->
+                <article class="product-card" data-category="chips">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1566478989037-eec170784d0b?w=400&h=300&fit=crop" alt="Classic Salted Chips" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Classic Salted Chips</h3>
+                        <p class="product-description">Perfectly crispy potato chips with just the right amount of sea salt</p>
+                        <button class="btn btn-outline view-details-btn" data-product="salted-chips">View Details</button>
+                    </div>
+                </article>
+
+                <!-- Product 3 -->
+                <article class="product-card" data-category="namkeen">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1613919113640-25732ec5e61f?w=400&h=300&fit=crop" alt="Crunchy Namkeen Mix" loading="lazy">
+                        <div class="product-badge">Popular</div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Crunchy Namkeen Mix</h3>
+                        <p class="product-description">Traditional savory mix with nuts, lentils, and aromatic spices</p>
+                        <button class="btn btn-outline view-details-btn" data-product="namkeen-mix">View Details</button>
+                    </div>
+                </article>
+
+                <!-- Product 4 -->
+                <article class="product-card" data-category="namkeen">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1599490659213-e2b9527bd087?w=400&h=300&fit=crop" alt="Peanut Masala" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Peanut Masala</h3>
+                        <p class="product-description">Roasted peanuts coated with spicy masala for the perfect tea-time snack</p>
+                        <button class="btn btn-outline view-details-btn" data-product="peanut-masala">View Details</button>
+                    </div>
+                </article>
+
+                <!-- Product 5 -->
+                <article class="product-card" data-category="sweet">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1600952841320-db92ec4047ca?w=400&h=300&fit=crop" alt="Sweet Jaggery Bites" loading="lazy">
+                        <div class="product-badge">New</div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Sweet Jaggery Bites</h3>
+                        <p class="product-description">Wholesome energy bites made with organic jaggery and mixed nuts</p>
+                        <button class="btn btn-outline view-details-btn" data-product="jaggery-bites">View Details</button>
+                    </div>
+                </article>
+
+                <!-- Product 6 -->
+                <article class="product-card" data-category="sweet">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Coconut Cookies" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Coconut Cookies</h3>
+                        <p class="product-description">Crispy, buttery cookies with real coconut flakes for that tropical taste</p>
+                        <button class="btn btn-outline view-details-btn" data-product="coconut-cookies">View Details</button>
+                    </div>
+                </article>
+
+                <!-- Product 7 -->
+                <article class="product-card" data-category="chips">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1600952841320-db92ec4047ca?w=400&h=300&fit=crop" alt="Tangy Tomato Chips" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Tangy Tomato Chips</h3>
+                        <p class="product-description">Crispy chips with a perfect balance of tangy tomato flavor</p>
+                        <button class="btn btn-outline view-details-btn" data-product="tomato-chips">View Details</button>
+                    </div>
+                </article>
+
+                <!-- Product 8 -->
+                <article class="product-card" data-category="namkeen">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1599490659213-e2b9527bd087?w=400&h=300&fit=crop" alt="Bhujia Sev" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Bhujia Sev</h3>
+                        <p class="product-description">Fine, crispy gram flour noodles with authentic Indian spices</p>
+                        <button class="btn btn-outline view-details-btn" data-product="bhujia-sev">View Details</button>
+                    </div>
+                </article>
+
+                <!-- Product 9 -->
+                <article class="product-card" data-category="sweet">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=400&h=300&fit=crop" alt="Chocolate Chip Cookies" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Chocolate Chip Cookies</h3>
+                        <p class="product-description">Classic cookies loaded with premium chocolate chips</p>
+                        <button class="btn btn-outline view-details-btn" data-product="chocolate-cookies">View Details</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Modal -->
+    <div class="modal" id="productModal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Close modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Interested in Our Products?</h2>
+                <p class="cta-description">Request a quote or get in touch for bulk orders and distribution inquiries</p>
+                <a href="contact.html" class="btn btn-primary btn-large">Request a Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-title">
+                        <i class="fas fa-cookie-bite"></i>
+                        Archyz
+                    </h3>
+                    <p class="footer-description">Crafting premium snacks with passion and quality since our inception in Bengaluru.</p>
+                    <div class="footer-social">
+                        <a href="https://linkedin.com/company/archyz" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/archyz" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="https://facebook.com/archyz" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Koramangala, Bengaluru,<br>Karnataka 560095, India</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+918012345678">+91 80 1234 5678</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="/cdn-cgi/l/email-protection#553d3039393a153427363d2c2f7b3c3b"><span class="__cf_email__" data-cfemail="aac2cfc6c6c5eacbd8c9c2d3d084c3c4">[email&#160;protected]</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Archyz. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
+</body>
+</html>
