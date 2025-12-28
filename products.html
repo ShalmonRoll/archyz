@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Browse Archyz's complete product portfolio - premium snacks including chips, namkeen, cookies, and more. Quality snacks from Bengaluru.">
-    <meta name="keywords" content="Archyz products, snacks portfolio, chips, namkeen, cookies, Indian snacks, buy snacks online">
+    <meta name="description" content="Browse Archyz's complete product portfolio - premium snacks including Nimkiz, Bhuzza, and Masala Poha. Quality snacks from Bengaluru.">
+    <meta name="keywords" content="Archyz products, snacks portfolio, nimkiz, bhuzza, masala poha, namakpaara, Indian snacks, buy snacks online">
     <meta name="author" content="Archyz">
     <title>Products - Archyz Premium Snacks Portfolio | Browse & Buy</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://www.genspark.ai/api/files/s/8B2g98dY">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,8 +27,8 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">
-                <i class="fas fa-cookie-bite"></i>
-                <span>Archyz</span>
+                <img src="images/favicon.ico" alt="Archyz Logo" style="width: 64px; height: 32px;">
+                <!-- <span>Archyz</span> -->
             </a>
             
             <ul class="nav-menu" id="navMenu">
@@ -44,13 +47,13 @@
             </ul>
             
             <div class="nav-social">
-                <a href="https://linkedin.com/company/archyz" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
+                <a href="https://www.instagram.com/avantikaent.official/" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                    <i class="fab fa-instagram"></i>
                 </a>
-                <a href="https://twitter.com/archyz" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                    <i class="fab fa-x-twitter"></i>
+                <a href="https://www.youtube.com/@archyzin-t1m" target="_blank" rel="noopener noreferrer" aria-label="youtube">
+                    <i class="fab fa-youtube"></i>
                 </a>
-                <a href="https://facebook.com/archyz" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <a href="https://www.facebook.com/share/17mNypmE6D/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                     <i class="fab fa-facebook"></i>
                 </a>
             </div>
@@ -79,9 +82,8 @@
                 <h3 class="filter-title">Filter by Category:</h3>
                 <div class="filter-buttons" id="filterButtons">
                     <button class="filter-btn active" data-category="all">All Products</button>
-                    <button class="filter-btn" data-category="chips">Chips</button>
-                    <button class="filter-btn" data-category="namkeen">Namkeen</button>
-                    <button class="filter-btn" data-category="sweet">Sweet Treats</button>
+                    <button class="filter-btn" data-category="nimki">Nimki</button>
+                    <button class="filter-btn" data-category="bhujja">Bhujja</button>
                 </div>
             </div>
         </div>
@@ -91,114 +93,55 @@
     <section class="section products-section">
         <div class="container">
             <div class="products-grid" id="productsGrid">
-                <!-- Product 1 -->
-                <article class="product-card" data-category="chips">
+                <!-- Product 1: Nimkiz/Namakpaara -->
+                <article class="product-card" data-category="nimki">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=400&h=300&fit=crop" alt="Spicy Masala Chips" loading="lazy">
+                        <img src="images/nimki.png" alt="Nimkiz - The Crunchy Traditional Taste" loading="lazy">
                         <div class="product-badge">Bestseller</div>
                     </div>
                     <div class="product-content">
-                        <h3 class="product-title">Spicy Masala Chips</h3>
-                        <p class="product-description">Crispy potato chips seasoned with our signature blend of Indian spices</p>
-                        <button class="btn btn-outline view-details-btn" data-product="masala-chips">View Details</button>
+                        <h3 class="product-title">Nimkiz</h3>
+                        <p class="product-description">Classic namakpaara with the perfect crunch and authentic traditional taste</p>
+                        <button class="btn btn-outline view-details-btn" data-product="nimkiz">View Details</button>
                     </div>
                 </article>
 
-                <!-- Product 2 -->
-                <article class="product-card" data-category="chips">
+                <!-- Product 2: Masala Nimkiz -->
+                <article class="product-card" data-category="nimki">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1566478989037-eec170784d0b?w=400&h=300&fit=crop" alt="Classic Salted Chips" loading="lazy">
+                        <img src="images/nimki.png" alt="Masala Nimkiz" loading="lazy">
+                        <div class="product-badge">Spicy</div>
                     </div>
                     <div class="product-content">
-                        <h3 class="product-title">Classic Salted Chips</h3>
-                        <p class="product-description">Perfectly crispy potato chips with just the right amount of sea salt</p>
-                        <button class="btn btn-outline view-details-btn" data-product="salted-chips">View Details</button>
+                        <h3 class="product-title">Masala Nimkiz</h3>
+                        <p class="product-description">Crispy namakpaara with a bold masala twist for those who love a spicy kick</p>
+                        <button class="btn btn-outline view-details-btn" data-product="masala-nimkiz">View Details</button>
                     </div>
                 </article>
 
-                <!-- Product 3 -->
-                <article class="product-card" data-category="namkeen">
+                <!-- Product 3: Bhuzza -->
+                <article class="product-card" data-category="bhujja">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1613919113640-25732ec5e61f?w=400&h=300&fit=crop" alt="Crunchy Namkeen Mix" loading="lazy">
+                        <img src="images/bhujja.png" alt="Bhuzza - The Crunchy Traditional Taste" loading="lazy">
                         <div class="product-badge">Popular</div>
                     </div>
                     <div class="product-content">
-                        <h3 class="product-title">Crunchy Namkeen Mix</h3>
-                        <p class="product-description">Traditional savory mix with nuts, lentils, and aromatic spices</p>
-                        <button class="btn btn-outline view-details-btn" data-product="namkeen-mix">View Details</button>
+                        <h3 class="product-title">Bhuzza</h3>
+                        <p class="product-description">Traditional crispy roasted poha with authentic spices and the perfect crunchy texture</p>
+                        <button class="btn btn-outline view-details-btn" data-product="bhuzza">View Details</button>
                     </div>
                 </article>
 
-                <!-- Product 4 -->
-                <article class="product-card" data-category="namkeen">
+                <!-- Product 4: Masala Poha -->
+                <article class="product-card" data-category="bhujja">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1599490659213-e2b9527bd087?w=400&h=300&fit=crop" alt="Peanut Masala" loading="lazy">
-                    </div>
-                    <div class="product-content">
-                        <h3 class="product-title">Peanut Masala</h3>
-                        <p class="product-description">Roasted peanuts coated with spicy masala for the perfect tea-time snack</p>
-                        <button class="btn btn-outline view-details-btn" data-product="peanut-masala">View Details</button>
-                    </div>
-                </article>
-
-                <!-- Product 5 -->
-                <article class="product-card" data-category="sweet">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1600952841320-db92ec4047ca?w=400&h=300&fit=crop" alt="Sweet Jaggery Bites" loading="lazy">
+                        <img src="images/masala_poha.png" alt="Masala Poha" loading="lazy">
                         <div class="product-badge">New</div>
                     </div>
                     <div class="product-content">
-                        <h3 class="product-title">Sweet Jaggery Bites</h3>
-                        <p class="product-description">Wholesome energy bites made with organic jaggery and mixed nuts</p>
-                        <button class="btn btn-outline view-details-btn" data-product="jaggery-bites">View Details</button>
-                    </div>
-                </article>
-
-                <!-- Product 6 -->
-                <article class="product-card" data-category="sweet">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Coconut Cookies" loading="lazy">
-                    </div>
-                    <div class="product-content">
-                        <h3 class="product-title">Coconut Cookies</h3>
-                        <p class="product-description">Crispy, buttery cookies with real coconut flakes for that tropical taste</p>
-                        <button class="btn btn-outline view-details-btn" data-product="coconut-cookies">View Details</button>
-                    </div>
-                </article>
-
-                <!-- Product 7 -->
-                <article class="product-card" data-category="chips">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1600952841320-db92ec4047ca?w=400&h=300&fit=crop" alt="Tangy Tomato Chips" loading="lazy">
-                    </div>
-                    <div class="product-content">
-                        <h3 class="product-title">Tangy Tomato Chips</h3>
-                        <p class="product-description">Crispy chips with a perfect balance of tangy tomato flavor</p>
-                        <button class="btn btn-outline view-details-btn" data-product="tomato-chips">View Details</button>
-                    </div>
-                </article>
-
-                <!-- Product 8 -->
-                <article class="product-card" data-category="namkeen">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1599490659213-e2b9527bd087?w=400&h=300&fit=crop" alt="Bhujia Sev" loading="lazy">
-                    </div>
-                    <div class="product-content">
-                        <h3 class="product-title">Bhujia Sev</h3>
-                        <p class="product-description">Fine, crispy gram flour noodles with authentic Indian spices</p>
-                        <button class="btn btn-outline view-details-btn" data-product="bhujia-sev">View Details</button>
-                    </div>
-                </article>
-
-                <!-- Product 9 -->
-                <article class="product-card" data-category="sweet">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=400&h=300&fit=crop" alt="Chocolate Chip Cookies" loading="lazy">
-                    </div>
-                    <div class="product-content">
-                        <h3 class="product-title">Chocolate Chip Cookies</h3>
-                        <p class="product-description">Classic cookies loaded with premium chocolate chips</p>
-                        <button class="btn btn-outline view-details-btn" data-product="chocolate-cookies">View Details</button>
+                        <h3 class="product-title">Masala Poha</h3>
+                        <p class="product-description">Crispy flattened rice flakes seasoned with aromatic masala and spices</p>
+                        <button class="btn btn-outline view-details-btn" data-product="masala-poha">View Details</button>
                     </div>
                 </article>
             </div>
@@ -223,8 +166,8 @@
         <div class="container">
             <div class="cta-content">
                 <h2 class="cta-title">Interested in Our Products?</h2>
-                <p class="cta-description">Request a quote or get in touch for bulk orders and distribution inquiries</p>
-                <a href="contact.html" class="btn btn-primary btn-large">Request a Quote</a>
+                <p class="cta-description">Place your order or get in touch for bulk orders and distribution inquiries</p>
+                <a href="contact.html" class="btn btn-primary btn-large">Place your order</a>
             </div>
         </div>
     </section>
@@ -235,18 +178,19 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <h3 class="footer-title">
-                        <i class="fas fa-cookie-bite"></i>
+                        <img src="images/favicon.ico" alt="Archyz" style="width: 46px; height: 28px; display: inline-block; vertical-align: middle;">
                         Archyz
                     </h3>
+                    <h5 class="footer-description">A brand owned by Avantika Enterprises.</h5>
                     <p class="footer-description">Crafting premium snacks with passion and quality since our inception in Bengaluru.</p>
                     <div class="footer-social">
-                        <a href="https://linkedin.com/company/archyz" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
+                        <a href="https://www.instagram.com/avantikaent.official/" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                            <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="https://twitter.com/archyz" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                            <i class="fab fa-x-twitter"></i>
+                        <a href="https://www.youtube.com/@archyzin-t1m" target="_blank" rel="noopener noreferrer" aria-label="youtube">
+                            <i class="fab fa-youtube"></i>
                         </a>
-                        <a href="https://facebook.com/archyz" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <a href="https://www.facebook.com/share/17mNypmE6D/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                             <i class="fab fa-facebook"></i>
                         </a>
                     </div>
@@ -273,7 +217,7 @@
                         </li>
                         <li>
                             <i class="fas fa-envelope"></i>
-                            <a href="/cdn-cgi/l/email-protection#553d3039393a153427363d2c2f7b3c3b"><span class="__cf_email__" data-cfemail="aac2cfc6c6c5eacbd8c9c2d3d084c3c4">[email&#160;protected]</span></a>
+                            <a href="/cdn-cgi/l/email-protection#2f474a4343406f4e5d4c475655014641"><span class="__cf_email__" data-cfemail="a2cac7cececde2c3d0c1cadbd88ccbcc">[email&#160;protected]</span></a>
                         </li>
                     </ul>
                 </div>

@@ -7,121 +7,56 @@
 // Global Variables
 // ===================================
 const productData = {
-    'masala-chips': {
-        title: 'Spicy Masala Chips',
-        category: 'Chips',
-        image: 'https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=600&h=400&fit=crop',
-        description: 'Our signature Spicy Masala Chips are crafted from premium quality potatoes, sliced to perfection and fried until golden and crispy. Each chip is then seasoned with our proprietary blend of authentic Indian spices, creating a flavor explosion that keeps you coming back for more. Perfect for parties, movie nights, or any time you crave a satisfying snack.',
-        specs: [
-            'Weight: 100g, 200g, 500g packs available',
-            'Ingredients: Potatoes, Palm Oil, Salt, Spice Mix (Red Chili, Cumin, Coriander, Black Pepper)',
-            'Shelf Life: 6 months from manufacturing date',
-            'Storage: Store in a cool, dry place',
-            'No artificial colors or preservatives'
-        ]
-    },
-    'salted-chips': {
-        title: 'Classic Salted Chips',
-        category: 'Chips',
-        image: 'https://images.unsplash.com/photo-1566478989037-eec170784d0b?w=600&h=400&fit=crop',
-        description: 'Sometimes simplicity is perfection. Our Classic Salted Chips feature premium potatoes sliced thin and fried to a perfect golden crisp. Lightly dusted with sea salt, these chips let the natural potato flavor shine through. A timeless favorite that pairs well with any dip or enjoyed on their own.',
-        specs: [
-            'Weight: 100g, 200g, 500g packs available',
-            'Ingredients: Potatoes, Palm Oil, Sea Salt',
-            'Shelf Life: 6 months from manufacturing date',
-            'Storage: Store in a cool, dry place',
-            'Gluten-free and vegetarian'
-        ]
-    },
-    'namkeen-mix': {
-        title: 'Crunchy Namkeen Mix',
-        category: 'Namkeen',
-        image: 'https://images.unsplash.com/photo-1613919113640-25732ec5e61f?w=600&h=400&fit=crop',
-        description: 'A traditional Indian savory snack mix that brings together the perfect combination of textures and flavors. Our Crunchy Namkeen Mix features roasted peanuts, fried lentils, crispy sev, and aromatic curry leaves, all seasoned with carefully balanced spices. Ideal for tea-time or as an anytime snack.',
+    'nimkiz': {
+        title: 'Nimkiz (Namakpaara)',
+        category: 'Nimki',
+        image: '/images/nimki.png',
+        description: 'Our classic Nimkiz brings you the authentic taste of traditional namakpaara. Each piece is crafted with precision using premium quality ingredients and time-tested recipes. The perfect crunch combined with just the right amount of salt makes this a beloved snack across generations. Ideal for tea-time, gatherings, or whenever you crave a traditional Indian savory snack.',
         specs: [
             'Weight: 150g, 300g, 500g packs available',
-            'Ingredients: Peanuts, Gram Flour, Lentils, Cashews, Curry Leaves, Spices',
-            'Shelf Life: 4 months from manufacturing date',
-            'Storage: Store in an airtight container',
+            'Ingredients: Wheat Flour, Refined Palm Oil, Salt, Ajwain (Carom Seeds)',
+            'Shelf Life: 6 months from manufacturing date',
+            'Storage: Store in a cool, dry place in an airtight container',
+            'No artificial colors, flavors, or preservatives'
+        ]
+    },
+    'masala-nimkiz': {
+        title: 'Masala Nimkiz',
+        category: 'Nimki',
+        image: '/images/nimki.png',
+        description: 'For those who love a spicy twist on the classic, our Masala Nimkiz delivers bold flavors with every bite. We take the traditional namakpaara and elevate it with our signature masala blend featuring aromatic spices. The result is a perfectly balanced snack that offers both the satisfying crunch and a delightful kick of spices. A favorite among spice lovers!',
+        specs: [
+            'Weight: 150g, 300g, 500g packs available',
+            'Ingredients: Wheat Flour, Refined Palm Oil, Salt, Ajwain, Red Chili, Turmeric, Spice Mix',
+            'Shelf Life: 6 months from manufacturing date',
+            'Storage: Store in a cool, dry place in an airtight container',
+            'Spice Level: Medium to Hot'
+        ]
+    },
+    'bhuzza': {
+        title: 'Bhuzza (Traditional Bhujia)',
+        category: 'Bhujja',
+        image: '/images/bhujja.png',
+        description: 'Experience the authentic taste of traditional bhujia with our Bhuzza. Made from premium gram flour and seasoned with carefully selected spices, each strand delivers the perfect crunch and flavor. This versatile snack can be enjoyed on its own, mixed with other namkeens, or used as a topping for chaats and other dishes. A pantry essential for every Indian household.',
+        specs: [
+            'Weight: 200g, 400g, 800g packs available',
+            'Ingredients: Gram Flour (Besan), Refined Palm Oil, Salt, Red Chili, Black Pepper, Asafoetida',
+            'Shelf Life: 5 months from manufacturing date',
+            'Storage: Store in a cool, dry place in an airtight container',
             'Rich in protein and fiber'
         ]
     },
-    'peanut-masala': {
-        title: 'Peanut Masala',
-        category: 'Namkeen',
-        image: 'https://images.unsplash.com/photo-1599490659213-e2b9527bd087?w=600&h=400&fit=crop',
-        description: 'Premium quality peanuts roasted to perfection and coated with our special masala blend. These crunchy, spicy treats are packed with protein and flavor, making them the ideal healthy snack option. Great for sharing during gatherings or enjoying during your work breaks.',
-        specs: [
-            'Weight: 100g, 250g, 500g packs available',
-            'Ingredients: Peanuts, Gram Flour, Red Chili, Turmeric, Salt, Spices',
-            'Shelf Life: 5 months from manufacturing date',
-            'Storage: Store in a cool, dry place',
-            'High in protein and energy'
-        ]
-    },
-    'jaggery-bites': {
-        title: 'Sweet Jaggery Bites',
-        category: 'Sweet Treats',
-        image: 'https://images.unsplash.com/photo-1600952841320-db92ec4047ca?w=600&h=400&fit=crop',
-        description: 'Wholesome energy bites made with organic jaggery, mixed nuts, and seeds. These naturally sweet treats are perfect for satisfying your sweet tooth while providing sustained energy. Free from refined sugar, they\'re a healthier alternative that doesn\'t compromise on taste.',
-        specs: [
-            'Weight: 150g, 300g packs available',
-            'Ingredients: Organic Jaggery, Almonds, Cashews, Dates, Sesame Seeds',
-            'Shelf Life: 3 months from manufacturing date',
-            'Storage: Store in an airtight container',
-            'No refined sugar, rich in iron and calcium'
-        ]
-    },
-    'coconut-cookies': {
-        title: 'Coconut Cookies',
-        category: 'Sweet Treats',
-        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop',
-        description: 'Crispy, buttery cookies studded with real coconut flakes for that authentic tropical taste. Each cookie is baked to golden perfection, offering a delightful crunch with every bite. Perfect with a cup of chai or coffee, or as a sweet treat any time of the day.',
-        specs: [
-            'Weight: 200g, 400g packs available',
-            'Ingredients: Wheat Flour, Butter, Sugar, Coconut Flakes, Baking Powder',
-            'Shelf Life: 4 months from manufacturing date',
-            'Storage: Store in an airtight container',
-            'Made with real butter and coconut'
-        ]
-    },
-    'tomato-chips': {
-        title: 'Tangy Tomato Chips',
-        category: 'Chips',
-        image: 'https://images.unsplash.com/photo-1600952841320-db92ec4047ca?w=600&h=400&fit=crop',
-        description: 'Experience the perfect balance of tangy and savory with our Tangy Tomato Chips. Made from premium potatoes and seasoned with real tomato powder and herbs, these chips offer a unique flavor profile that stands out from the ordinary. A crowd-pleaser at every gathering.',
-        specs: [
-            'Weight: 100g, 200g, 500g packs available',
-            'Ingredients: Potatoes, Palm Oil, Tomato Powder, Herbs, Salt, Spices',
-            'Shelf Life: 6 months from manufacturing date',
-            'Storage: Store in a cool, dry place',
-            'Made with real tomato powder'
-        ]
-    },
-    'bhujia-sev': {
-        title: 'Bhujia Sev',
-        category: 'Namkeen',
-        image: 'https://images.unsplash.com/photo-1599490659213-e2b9527bd087?w=600&h=400&fit=crop',
-        description: 'Traditional Indian bhujia sev made from the finest gram flour, our recipe has been perfected over years of expertise. These fine, crispy noodles are seasoned with authentic spices, creating the perfect accompaniment for any meal or a satisfying standalone snack.',
+    'masala-poha': {
+        title: 'Masala Poha',
+        category: 'Bhujja',
+        image: '/images/masala_poha.png',
+        description: 'Our Masala Poha transforms the humble flattened rice into a crispy, flavorful snack that\'s both delicious and wholesome. Each flake is carefully roasted to achieve the perfect crispiness, then seasoned with our aromatic masala blend. Light yet satisfying, this snack is perfect for those looking for a healthier alternative without compromising on taste. Great for munching any time of the day!',
         specs: [
             'Weight: 150g, 300g, 500g packs available',
-            'Ingredients: Gram Flour, Palm Oil, Salt, Red Chili, Turmeric, Asafoetida',
+            'Ingredients: Flattened Rice (Poha), Refined Palm Oil, Peanuts, Curry Leaves, Turmeric, Mustard Seeds, Spices',
             'Shelf Life: 4 months from manufacturing date',
-            'Storage: Store in an airtight container',
-            'Traditional recipe, no artificial additives'
-        ]
-    },
-    'chocolate-cookies': {
-        title: 'Chocolate Chip Cookies',
-        category: 'Sweet Treats',
-        image: 'https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=600&h=400&fit=crop',
-        description: 'Classic chocolate chip cookies loaded with premium chocolate chips. Soft, chewy centers with slightly crispy edges make these cookies irresistible. Made with quality ingredients and baked fresh, they\'re perfect for satisfying your chocolate cravings any time of the day.',
-        specs: [
-            'Weight: 200g, 400g packs available',
-            'Ingredients: Wheat Flour, Butter, Sugar, Chocolate Chips, Eggs, Vanilla',
-            'Shelf Life: 4 months from manufacturing date',
-            'Storage: Store in an airtight container',
-            'Contains real chocolate chips'
+            'Storage: Store in a cool, dry place in an airtight container',
+            'Gluten-free option, light and crispy'
         ]
     }
 };
@@ -129,7 +64,7 @@ const productData = {
 // ===================================
 // DOM Elements
 // ===================================
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Initialize all features
     initNavigation();
     initSmoothScroll();
@@ -148,27 +83,27 @@ function initNavigation() {
 
     // Toggle mobile menu
     if (hamburger) {
-        hamburger.addEventListener('click', function() {
+        hamburger.addEventListener('click', function () {
             navMenu.classList.toggle('active');
-            
+
             // Animate hamburger icon
             const bars = hamburger.querySelectorAll('.bar');
-            bars[0].style.transform = navMenu.classList.contains('active') 
-                ? 'rotate(-45deg) translate(-6px, 6px)' 
+            bars[0].style.transform = navMenu.classList.contains('active')
+                ? 'rotate(-45deg) translate(-6px, 6px)'
                 : 'none';
             bars[1].style.opacity = navMenu.classList.contains('active') ? '0' : '1';
-            bars[2].style.transform = navMenu.classList.contains('active') 
-                ? 'rotate(45deg) translate(-6px, -6px)' 
+            bars[2].style.transform = navMenu.classList.contains('active')
+                ? 'rotate(45deg) translate(-6px, -6px)'
                 : 'none';
         });
     }
 
     // Close menu when clicking on a link
     navLinks.forEach(link => {
-        link.addEventListener('click', function() {
+        link.addEventListener('click', function () {
             if (navMenu.classList.contains('active')) {
                 navMenu.classList.remove('active');
-                
+
                 // Reset hamburger animation
                 const bars = hamburger.querySelectorAll('.bar');
                 bars.forEach(bar => {
@@ -182,7 +117,7 @@ function initNavigation() {
     // Add sticky navbar effect
     const navbar = document.getElementById('navbar');
     if (navbar) {
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             if (window.scrollY > 50) {
                 navbar.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.15)';
             } else {
@@ -198,23 +133,23 @@ function initNavigation() {
 function initSmoothScroll() {
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+        anchor.addEventListener('click', function (e) {
             const href = this.getAttribute('href');
-            
+
             // Skip if href is just "#"
             if (href === '#') {
                 e.preventDefault();
                 return;
             }
-            
+
             const targetElement = document.querySelector(href);
-            
+
             if (targetElement) {
                 e.preventDefault();
-                
+
                 const navbarHeight = document.getElementById('navbar')?.offsetHeight || 70;
                 const targetPosition = targetElement.offsetTop - navbarHeight;
-                
+
                 window.scrollTo({
                     top: targetPosition,
                     behavior: 'smooth'
@@ -234,7 +169,7 @@ function initProductFilter() {
     if (filterButtons.length === 0) return;
 
     filterButtons.forEach(button => {
-        button.addEventListener('click', function() {
+        button.addEventListener('click', function () {
             // Update active button
             filterButtons.forEach(btn => btn.classList.remove('active'));
             this.classList.add('active');
@@ -244,7 +179,7 @@ function initProductFilter() {
             // Filter products
             productCards.forEach(card => {
                 const category = card.getAttribute('data-category');
-                
+
                 if (filterValue === 'all' || category === filterValue) {
                     card.classList.remove('hidden');
                     // Add fade-in animation
@@ -271,7 +206,7 @@ function initProductModals() {
 
     // Open modal on button click
     viewDetailsBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
+        btn.addEventListener('click', function () {
             const productId = this.getAttribute('data-product');
             const product = productData[productId];
 
@@ -291,7 +226,7 @@ function initProductModals() {
                         </ul>
                     </div>
                     <a href="contact.html" class="btn btn-primary btn-large btn-block">
-                        <i class="fas fa-envelope"></i> Request a Quote
+                        <i class="fab fa-whatsapp"></i> Place an order
                     </a>
                 `;
 
@@ -317,7 +252,7 @@ function initProductModals() {
     }
 
     // Close modal on ESC key
-    document.addEventListener('keydown', function(e) {
+    document.addEventListener('keydown', function (e) {
         if (e.key === 'Escape' && modal.classList.contains('active')) {
             closeModal();
         }
@@ -329,10 +264,10 @@ function initProductModals() {
 // ===================================
 function initContactForm() {
     const contactForm = document.getElementById('contactForm');
-    
+
     if (!contactForm) return;
 
-    contactForm.addEventListener('submit', function(e) {
+    contactForm.addEventListener('submit', function (e) {
         e.preventDefault();
 
         // Clear previous errors
@@ -397,7 +332,7 @@ function initContactForm() {
 function showError(elementId, message) {
     const errorElement = document.getElementById(elementId);
     const inputElement = errorElement.previousElementSibling;
-    
+
     errorElement.textContent = message;
     errorElement.classList.add('active');
     inputElement.classList.add('error');
@@ -406,12 +341,12 @@ function showError(elementId, message) {
 function clearErrors() {
     const errorElements = document.querySelectorAll('.form-error');
     const inputElements = document.querySelectorAll('.form-input');
-    
+
     errorElements.forEach(error => {
         error.textContent = '';
         error.classList.remove('active');
     });
-    
+
     inputElements.forEach(input => {
         input.classList.remove('error');
     });
@@ -436,7 +371,7 @@ function submitForm(name, email, phone, subject, message) {
     submitBtn.disabled = true;
 
     // Simulate API call with timeout
-    setTimeout(function() {
+    setTimeout(function () {
         // Reset button
         submitBtn.innerHTML = originalBtnText;
         submitBtn.disabled = false;
@@ -467,7 +402,7 @@ function showSuccessMessage(name) {
         text-align: center;
         animation: slideDown 0.3s ease;
     `;
-    
+
     alertDiv.innerHTML = `
         <div style="display: flex; align-items: center; gap: 1rem;">
             <i class="fas fa-check-circle" style="font-size: 1.5rem;"></i>
@@ -510,9 +445,9 @@ function showSuccessMessage(name) {
     document.body.appendChild(alertDiv);
 
     // Remove alert after 5 seconds
-    setTimeout(function() {
+    setTimeout(function () {
         alertDiv.style.animation = 'slideUp 0.3s ease';
-        setTimeout(function() {
+        setTimeout(function () {
             alertDiv.remove();
         }, 300);
     }, 5000);
@@ -527,7 +462,7 @@ function observeElements() {
         rootMargin: '0px 0px -50px 0px'
     };
 
-    const observer = new IntersectionObserver(function(entries) {
+    const observer = new IntersectionObserver(function (entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.style.animation = 'fadeInUp 0.6s ease';
@@ -565,7 +500,7 @@ function initScrollToTop() {
         right: 30px;
         width: 50px;
         height: 50px;
-        background-color: #10b981;
+        background-color: #B25000;
         color: white;
         border: none;
         border-radius: 50%;
@@ -579,17 +514,17 @@ function initScrollToTop() {
         z-index: 1000;
     `;
 
-    scrollBtn.addEventListener('mouseenter', function() {
-        this.style.backgroundColor = '#059669';
+    scrollBtn.addEventListener('mouseenter', function () {
+        this.style.backgroundColor = '#913600';
         this.style.transform = 'translateY(-3px)';
     });
 
-    scrollBtn.addEventListener('mouseleave', function() {
-        this.style.backgroundColor = '#10b981';
+    scrollBtn.addEventListener('mouseleave', function () {
+        this.style.backgroundColor = '#B25000';
         this.style.transform = 'translateY(0)';
     });
 
-    scrollBtn.addEventListener('click', function() {
+    scrollBtn.addEventListener('click', function () {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
@@ -599,7 +534,7 @@ function initScrollToTop() {
     document.body.appendChild(scrollBtn);
 
     // Show/hide button based on scroll position
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
         if (window.scrollY > 300) {
             scrollBtn.style.display = 'flex';
         } else {
